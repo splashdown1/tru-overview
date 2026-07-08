@@ -168,6 +168,15 @@ The source remains private. The explanation is public.
 
 ---
 
+## About the builder
+
+Two photos of the person behind TRU:
+
+<img src="resume.jpeg" alt="Builder photo 1" width="320" />
+<img src="resume2.jpeg" alt="Builder photo 2" width="320" />
+
+---
+
 ## Closing statement
 
 TRU is an engine for keeping truth anchored while the interface keeps changing.
