@@ -14,6 +14,22 @@
 
 ---
 
+## Start here
+
+The current public build is the shelf, not the old monorepo.
+
+- Door: [tru-shelf](https://github.com/splashdown1/tru-shelf) — https://splashdown1.github.io/tru-shelf/
+- Scripture engine: [tru-canonbound](https://github.com/splashdown1/tru-canonbound) — 31,100 KJV verses, Strong's, Thayer, BDB, Treasury, Nave's, Torrey. A miss stays a gap.
+- Survival and first aid: [tru-lifeline](https://github.com/splashdown1/tru-lifeline) — FM 21-76 (1970) and FM 21-11 (1976).
+
+Each lane is one HTML file. Save it. If it needs a network to run, it is not a lane.
+
+Rules, Door, Join, Radio, and Harbor are public and are not lanes. Rival is not on the shelf. Sight is pinned and not built.
+
+`tru-offline` and `tru-universe` are archived. They are lineage, not the release. Phase 27 and the APEX files below are the same: preserved, not current.
+
+---
+
 ## Summary
 
 TRU is a sovereign, offline-first Bible study companion and local intelligence engine. It is designed to run from a downloaded file in a modern browser, without an account, subscription, cloud service, API key, or recurring fee.
@@ -61,7 +77,7 @@ The most useful groups are:
 
 ### The current canonical baseline
 
-The current canonical offline host is the Phase 27 build at `Projects/TRU/current/index.html`. It is the release baseline for the maintained source tree: self-contained, offline, locally persistent, and verified against its smoke test. It embeds 30,745 local knowledge nodes and the KJV Scripture layer.
+The Phase 27 build at `Projects/TRU/current/index.html` was the release baseline for the old source tree. As of 3 October 2026 it is lineage. The public baseline is Canonbound, reached from the shelf. Phase 27 remains self-contained and offline, with 30,745 local knowledge nodes and the KJV Scripture layer, but it is not the door.
 
 Phase 28 and Phase 29 are preserved candidate branches that add a larger knowledge graph and a deterministic local council. Phase 30 is an active recursive-council development line, not a claim that every experimental branch is production-ready.
 
@@ -82,7 +98,7 @@ The architecture favours files and portable artefacts: HTML for a complete offli
 
 ## Try it
 
-Example prompts include:
+Open the shelf, then Canonbound. Example prompts on the scripture engine include:
 
 ```text
 Psalm 23
@@ -91,11 +107,7 @@ Where is Jesus now?
 Who wrote Genesis?
 What is the KJV?
 Explain the meaning of grace
-TRU start reading at Genesis 1:1
-TRU start reading at John 3:16
-TRU pause reading
-TRU resume reading
-TRU audit last answer
+John 3:16
 ```
 
 Download a chosen HTML build, open it in a modern browser, and study locally. No installation is required for the single-file builds.
@@ -113,7 +125,7 @@ TRU's offline contract is intentionally strict:
 - Scripture, study data, questions, and local history remain in the downloaded application and browser storage
 - the files can be copied, archived, inspected, or run without a hosted service
 
-This overview repository does not contain the complete TRU engine source or distribution files. It contains this README as the public explanation; the implementation and larger artefacts remain private or are distributed separately.
+This overview repository does not contain the complete TRU engine source or distribution files. It contains this README as the public explanation. The implementation a person can run is on the shelf, Canonbound, and Lifeline.
 
 ## Honest boundaries
 
@@ -125,16 +137,22 @@ Some historical files in the development archive have unresolved source provenan
 
 ## Project structure
 
-The private development monorepo is organised around:
+The public surface is:
 
-- `Projects/TRU/current/` — maintained canonical source and baseline host
+- `tru-shelf` — door
+- `tru-canonbound` — scripture engine
+- `tru-lifeline` — survival and first aid
+- one repository per lane card
+
+The old development monorepo, now archived, was organised around:
+
+- `Projects/TRU/current/` — former Phase 27 host
 - `Projects/TRU/phase28/`, `phase29/`, and `phase30/` — milestone branches
 - `Projects/TRU/build-scripts/` — reproducible builders and patches
 - `Projects/TRU/data/` — Scripture, brain, dictionary, lexicon, and cross-reference inputs
 - `Projects/TRU/versions/` — preserved named engine variants
 - `archive/legacy-root-builds/` — older large-build lineage
 - `tru-ghost-public/` — ghost/export variants
-- `tru-core/` and related repositories — portable core, research, and supporting work
 
 ## Licence and status
 
