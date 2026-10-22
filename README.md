@@ -18,11 +18,15 @@
 
 The current public build is the shelf, not the old monorepo.
 
-- Door: [tru-shelf](https://github.com/splashdown1/tru-shelf) — https://splashdown1.github.io/tru-shelf/
+- Shelf: [tru-shelf](https://github.com/splashdown1/tru-shelf) — https://splashdown1.github.io/tru-shelf/
+- Door: [tru-door](https://github.com/splashdown1/tru-door) — routes the ask to the ship that holds the card
+- Search: [tru-search-engine](https://github.com/splashdown1/tru-search-engine) — local knowledge index (BM25, notes, graph). Import packs offline.
 - Scripture engine: [tru-canonbound](https://github.com/splashdown1/tru-canonbound) — 31,100 KJV verses, Strong's, Thayer, BDB, Treasury, Nave's, Torrey. A miss stays a gap.
 - Survival and first aid: [tru-lifeline](https://github.com/splashdown1/tru-lifeline) — FM 21-76 (1970) and FM 21-11 (1976).
 
 Each lane is one HTML file. Save it. If it needs a network to run, it is not a lane.
+
+**Internet without internet:** Shelf catalogs. Door routes. Search indexes. Lanes hold the cards. Rules bind the law. Save the files; the radio can be off.
 
 Rules, Door, Join, Radio, and Harbor are public and are not lanes. Rival is not on the shelf. Sight is pinned and not built.
 
@@ -98,16 +102,13 @@ The architecture favours files and portable artefacts: HTML for a complete offli
 
 ## Try it
 
-Open the shelf, then Canonbound. Example prompts on the scripture engine include:
+Open the shelf, then Canonbound or Search. Example prompts:
 
 ```text
 Psalm 23
 What is faith without works?
-Where is Jesus now?
-Who wrote Genesis?
-What is the KJV?
-Explain the meaning of grace
 John 3:16
+search knowledge gap
 ```
 
 Download a chosen HTML build, open it in a modern browser, and study locally. No installation is required for the single-file builds.
@@ -125,7 +126,7 @@ TRU's offline contract is intentionally strict:
 - Scripture, study data, questions, and local history remain in the downloaded application and browser storage
 - the files can be copied, archived, inspected, or run without a hosted service
 
-This overview repository does not contain the complete TRU engine source or distribution files. It contains this README as the public explanation. The implementation a person can run is on the shelf, Canonbound, and Lifeline.
+This overview repository does not contain the complete TRU engine source or distribution files. It contains this README as the public explanation. The implementation a person can run is on the shelf, Door, Search, Canonbound, and Lifeline.
 
 ## Honest boundaries
 
@@ -139,7 +140,9 @@ Some historical files in the development archive have unresolved source provenan
 
 The public surface is:
 
-- `tru-shelf` — door
+- `tru-shelf` — catalog of lanes
+- `tru-door` — routes the ask
+- `tru-search-engine` — local knowledge index
 - `tru-canonbound` — scripture engine
 - `tru-lifeline` — survival and first aid
 - one repository per lane card
