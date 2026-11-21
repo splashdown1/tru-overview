@@ -50,7 +50,7 @@ It does not send questions or history to a remote model.
 - Search engine — local BM25 index
 
 **Field cards** (examples)  
-Signal · Pantry · Wind · Tide · Breath · Prayer · Mark · Measure · Cord · and others listed on the Shelf.
+Signal · Pantry · Wind · Tide · Breath · Prayer · Hydro · Mark · Measure · Cord · and others listed on the Shelf.
 
 **Supporting ships** (not lanes)  
 Rules · Door · Join · Radio · Harbor · Rival · Sight (pinned, not built)
