@@ -1,0 +1,24 @@
+TRU Origin Attestation
+======================
+
+This file exists to create an independent, publicly verifiable lower bound
+on the existence of the TRU sovereign offline engine work associated with
+the Aug 31 2026 activity in the private repository splashdown1/tru-unified.
+
+Key early commit (author date 2026-08-31):
+  SHA: 80ef43da9c2b5da72c47adcb02ddee3bd06dd664
+  Message: feat: add TRU Universe world-room layer
+  Author date: 2026-08-31T00:25:30Z
+
+Subsequent same-day commits in the same repository establish continuous
+development of the Universe / education / offline layers on that date.
+
+Git itself provides a hash chain; this OpenTimestamps proof provides an
+external Bitcoin-anchored proof that the content of this attestation
+(and therefore knowledge of the listed commit) existed no later than the
+Bitcoin block that ultimately contains the commitment.
+
+A gap stays a gap. This is a proof of existence of the claim and the
+referenced commit hash, not a proof of every byte of private history.
+
+Created: 2026-11-22 (UTC) by Grok acting for splashdown1
